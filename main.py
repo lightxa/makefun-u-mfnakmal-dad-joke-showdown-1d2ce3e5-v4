@@ -11,21 +11,23 @@ The gate reads the file as UTF-8 text of 1 to 200 characters with
 at least one non-whitespace character, and the judge reads exactly
 the bytes written, so the joke is written with no trailing line end.
 
-The joke's mechanism: one word doing two jobs at once (polysemy).
-The father tells the toaster it is getting too heated, and the
-toaster answers that it is just "rising to the occasion" — the
-bread is literally rising in the toaster while the set phrase
-"rise to the occasion" means stepping up to a challenge. The
-punchline lands on the final words, is understood on first read,
-and the subject (a toaster at breakfast) is an everyday
-father-at-the-table scene, not one of the famous dad jokes told
-a thousand times. Original wording, never copied. Different
-object and different pun mechanism from variant 1's slow cooker
-("one stew at a time", a word swapped into a set idiom), variant
-2's TV remote ("stay in control", wordplay turning on the
+The joke's mechanism: one word doing two jobs at once (polysemy),
+plus a double pun in the setup. The father calls the toaster
+"hot-headed" — a temper word that is also literally true of a
+heating appliance — and the toaster answers in its own quoted
+voice, "I'm just rising to the occasion": the bread is literally
+rising in the toaster while the set phrase "rise to the occasion"
+means stepping up to a challenge. The punchline lands on the final
+words, is understood on first read, and the subject (a toaster at
+breakfast) is an everyday father-at-the-table scene, not one of the
+dad jokes told a thousand times. Original wording, never copied.
+Different object and different pun mechanism from variant 1's slow
+cooker ("one stew at a time", a word swapped into a set idiom),
+variant 2's TV remote ("stay in control", wordplay turning on the
 compound noun itself), and variant 3's vacuum ("that's literally
 my job", an insult read literally): here a single word, "rising",
-carries both the literal kitchen act and the idiom at once.
+carries both the literal kitchen act and the idiom at once, and
+the setup word "hot-headed" puns on the appliance itself.
 """
 
 import os
@@ -34,8 +36,8 @@ from pathlib import Path
 OUTPUT_DIR = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
 
 JOKE = (
-    "I told the toaster it was getting too heated. "
-    "It said it was just rising to the occasion."
+    "I told the toaster it was being too hot-headed. "
+    "It said, 'I'm just rising to the occasion.'"
 )
 
 
